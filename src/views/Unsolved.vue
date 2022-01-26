@@ -1,15 +1,19 @@
 <template>
   <div class="unsolved">
     <h2>Unsolved tasks</h2>
-    <div v-for="(task, index) in unsolved" :key="index" class="unsolved-task">
+    <div
+      v-for="(task, index) in store.getters.unsolvedTasks"
+      :key="index"
+      class="unsolved-task"
+    >
       <span>{{ task.todo }}</span>
     </div>
-    <div v-if="unsolved.length == 0">No task here!</div>
+    <div v-if="store.getters.unsolvedTasks.length == 0">No task here!</div>
   </div>
 </template>
 
 <script lang="ts">
-import { defineComponent, ref } from "vue";
+import { defineComponent } from "vue";
 import { useStore } from "@/store";
 
 export default defineComponent({
@@ -17,9 +21,7 @@ export default defineComponent({
   setup() {
     const store = useStore();
 
-    const unsolved = ref(store.getters.unsolvedTasks);
-
-    return { unsolved };
+    return { store };
   },
 });
 </script>
