@@ -1,7 +1,11 @@
 <template>
   <div class="task">
     <h3>{{ taskIndex }}</h3>
-    <Checkbox :checked="task.status" @newCheck="statusAssigner" />
+    <Checkbox
+      :checked="task.status"
+      @newCheck="statusAssigner"
+      :checkId="task.id"
+    />
     <Input action="update" @update="valueAssigner" :todo="task.todo" />
     <Button v-if="updateShower" action="update" @update="updateTask()" />
     <Button v-else action="remove" @remove="deleteTask(task.id)" />

@@ -1,14 +1,14 @@
 <template>
-  <label v-if="checked" for="checky">
+  <label v-if="checked" :for="checkId">
     <font-awesome-icon icon="check-circle" />
   </label>
-  <label v-else for="checky">
+  <label v-else :for="checkId">
     <font-awesome-icon icon="times-circle" />
   </label>
 
   <input
     type="checkbox"
-    id="checky"
+    :id="checkId"
     :checked="checked"
     @click="$emit('newCheck', checked ? false : true)"
   />
@@ -19,7 +19,7 @@ import { defineComponent } from "@vue/runtime-core";
 
 export default defineComponent({
   name: "Checkbox",
-  props: { checked: Boolean },
+  props: { checked: Boolean, checkId: String },
   emits: ["newCheck"],
 });
 </script>
