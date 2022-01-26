@@ -1,4 +1,8 @@
-# todo-app
+# Todos App
+
+### 🚀 Live Demo: https://todo-app-9ym6o.ondigitalocean.app/
+
+<br>
 
 ## Project setup
 
