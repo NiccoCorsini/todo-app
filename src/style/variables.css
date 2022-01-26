@@ -1,0 +1,14 @@
+#app {
+  --primary-color: #020826;
+  --secondary-color: rgb(61, 61, 61);
+  --light-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  --container-shadow: rgba(89, 78, 151, 0.15) 0px 48px 100px 0px;
+  --background-color: #f9f4ef;
+  --secondary-background-color: #eaddcf;
+  --button: #8c7851;
+  --button-hover: #746444;
+  --details: #8c78513f;
+  --danger: #f25042;
+  --danger-hover: #ca4336;
+  --button-text: white;
+}

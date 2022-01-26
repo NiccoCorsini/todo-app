@@ -1,0 +1,59 @@
+@import "../../animations.css";
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--button-text);
+  box-shadow: var(--light-shadow);
+  background-color: var(--button);
+  transition: all 250ms;
+  cursor: pointer;
+  font-size: 18px;
+  animation: buttonAppear 250ms ease forwards;
+}
+
+.btn:active {
+  transform: scale(0.6);
+}
+
+.btn:hover {
+  background-color: var(--button-hover);
+}
+
+.btn.btn-remove,
+.btn.btn-clear {
+  background-color: var(--danger);
+}
+
+.btn.btn-remove:hover,
+.btn.btn-clear:hover {
+  background-color: var(--danger-hover);
+}
+
+.btn.btn-clear {
+  margin-top: 18px;
+  width: 46px;
+  height: 46px;
+  font-size: 20px;
+  position: relative;
+  padding-left: 4px;
+}
+
+.btn.btn-clear::after {
+  content: "Clear all!";
+  color: var(--primary-color);
+  position: absolute;
+  width: 80px;
+  left: 45px;
+  font-size: 16px;
+}
+
+.btn.btn-clear:hover::after {
+  animation: wiggle 1.5s linear infinite;
+}

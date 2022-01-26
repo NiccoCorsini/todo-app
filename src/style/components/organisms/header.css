@@ -1,0 +1,17 @@
+#nav {
+  padding: 30px;
+}
+
+#nav a {
+  font-weight: bold;
+  color: var(--button-text);
+  padding: 10px;
+  border-radius: 20px;
+  background-color: var(--details);
+  text-decoration: none;
+  animation: all 250ms;
+}
+
+#nav a.router-link-exact-active {
+  background-color: var(--button);
+}

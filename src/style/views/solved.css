@@ -1,0 +1,14 @@
+h2 {
+  margin-bottom: 20px;
+}
+.solved-task {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--details);
+  padding-bottom: 4px;
+}
+
+.solved-task span {
+  text-decoration: line-through;
+  font-style: oblique;
+}

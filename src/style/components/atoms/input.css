@@ -1,0 +1,23 @@
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  height: 40px;
+  font-size: 16px;
+  border-bottom: 1px solid var(--details);
+  animation: all 250ms;
+}
+
+input:focus {
+  border-bottom: 1px solid var(--button);
+}
+
+#adder {
+  width: 325px;
+  margin-right: 13px;
+}
+
+.resize {
+  width: 270px !important;
+  margin-right: 13px;
+}

@@ -1,0 +1,13 @@
+h2 {
+  margin-bottom: 20px;
+}
+.unsolved-task {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 1px solid var(--details);
+  padding-bottom: 4px;
+}
+
+.unsolved-task span {
+  font-style: oblique;
+}

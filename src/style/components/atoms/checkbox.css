@@ -1,0 +1,14 @@
+label {
+  display: block;
+  color: var(--button);
+  font-size: 30px;
+  cursor: pointer;
+}
+
+label:hover {
+  transform: scale(1.1);
+}
+
+input {
+  display: none;
+}
