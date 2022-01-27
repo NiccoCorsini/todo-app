@@ -6,7 +6,12 @@
       @newCheck="statusAssigner"
       :checkId="task.id"
     />
-    <Input action="update" @update="valueAssigner" :todo="task.todo" />
+    <Input
+      action="update"
+      @update="valueAssigner"
+      :solved="task.status"
+      :todo="task.todo"
+    />
     <Button v-if="updateShower" action="update" @update="updateTask()" />
     <Button v-else action="remove" @remove="deleteTask(task.id)" />
   </div>

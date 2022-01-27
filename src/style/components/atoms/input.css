@@ -21,3 +21,7 @@ input:focus {
   width: 270px !important;
   margin-right: 13px;
 }
+
+.solved {
+  text-decoration: line-through;
+}

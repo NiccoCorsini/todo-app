@@ -12,6 +12,7 @@
     />
     <input
       v-if="action == 'update'"
+      :class="{ solved: solved }"
       type="text"
       :value="todo"
       @input="$emit('update', $event.target.value)"
@@ -26,7 +27,7 @@ import { useStore } from "@/store";
 export default defineComponent({
   name: "Input",
 
-  props: { action: String, todo: String },
+  props: { action: String, todo: String, solved: Boolean },
 
   emits: ["add", "update"],
   setup() {
